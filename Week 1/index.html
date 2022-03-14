@@ -1,0 +1,173 @@
+  <!DOCTYPE html>
+  <html lang="nl">
+
+  <head>
+    <title>IWDER Project | Opdracht 1</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="favicon" content="favicon.ico" />
+    <meta name="author" content="Stan Smits" />
+    <meta name="keywords" content="IWDER, Stan Smits, ICT, Project, Opdracht, 1" />
+    <meta name="description" content="Opdracht 1 voor het vak IWDER, gemaakt door Stan Smits." />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Style imports -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Script imports -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/92a3ae643a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a href="index.html" class="navbar-link">
+            <i class="fas fa-home"></i>
+            <p class="link-text">Home</p>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="./index.html" class="navbar-link">
+            <i class="fas fa-dice-one"></i>
+            <p class="link-text">Eerste artikel</p>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="./artikel2.html" class="navbar-link">
+            <i class="fas fa-dice-two"></i>
+            <p class="link-text">Tweede artikel</p>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="./artikel3.html" class="navbar-link">
+            <i class="fas fa-dice-three"></i>
+            <p class="link-text">Derde artikel</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <article id="artikel1">
+        <h1>Door criminelen gebruikte VPN-dienst offline gehaald</h1>
+        <figure>
+          <img src="assets/img/crazy-hacker.jpeg" alt="Hacker image" />
+          <figcaption>&copy; Huffpost</figcaption>
+        </figure>
+        <section>
+          <h2>
+            Europol heeft een VPN-dienst die veel door cybercriminelen werd
+            gebruikt offline gehaald. Ook de Nederlandse politie deed mee bij de
+            operatie tegen VPNLab.
+          </h2>
+
+          <p>
+            In tien landen zijn servers
+            <a
+              href="https://www.europol.europa.eu/media-press/newsroom/news/unhappy-new-year-for-cybercriminals-vpnlabnet-goes-offline">in
+              beslag genomen</a>
+            of verstoord, waardoor VPNLab.net uit de lucht is.
+          </p>
+          <p>
+            Politiediensten ondernamen actie in Nederland, Duitsland, Canada,
+            Tsjechië, Frankrijk, Hongarije, Letland, Oekraïne, de Verenigde
+            Staten en het Verenigd Koninkrijk. De politie in het Duitse Hannover
+            leidde de operatie.
+          </p>
+        </section>
+        <section>
+          <h2>Dubbele VPN</h2>
+          <p>
+            VPN staat voor 'virtueel particulier netwerk' en is te zien als een
+            digitale tunnel waar dataverkeer doorheen gaat. Daardoor kunnen
+            anderen niet zien wat iemand op het internet doet.
+          </p>
+          <p>
+            VPNLab.net was sinds 2008 actief en bood gebruikers diensten om hun
+            online-privacy te beschermen. Ze werd er een dubbele VPN aangeboden,
+            waarbij de versleutelde verbinding via servers in meerdere landen
+            liep. Cybercriminelen maakten hier gebruik van, waardoor ze
+            moeilijker te traceren waren.
+          </p>
+        </section>
+        <section>
+          <h2>Bedrijven gewaarschuwd</h2>
+          <p>
+            Politiediensten kwamen de VPN-provider op het spoor nadat uit
+            meerdere onderzoeken naar voren kwam dat cybercriminelen er klant
+            waren. VPNLab.net adverteerde zelf ook op het darkweb.
+          </p>
+          <p>
+            Volgens Europol zijn er door de operatie meerdere cyberaanvallen en
+            hackpogingen voorkomen. Na de invallen zijn meer dan honderd
+            organisaties geïnformeerd dat ze het risico lopen op een
+            cyberaanval. Politiediensten werken inmiddels samen met deze
+            potentiële slachtoffers om hun digitale bescherming te verbeteren.
+          </p>
+        </section>
+        <a href="https://www.rtlnieuws.nl/tech/artikel/5281892/vpn-dienst-cybercrime-europol" target="_blank">Link naar
+          originele artikel
+          <p class="link-showcase">(rtlnieuws.nl)</p>
+        </a>
+        <!-- Comment Section -->
+        <section class="commentSection">
+          <section class="comments">
+            <img class="comment-avatar" src="assets/img/profile_picture.jpeg" alt="Avatar" />
+            <h5 class="comment-name">Stan Smits</h5>
+            <p class="comment-text">
+              Jammer dat ze mijn favoriete VPN service neer gehaald hebben, nu kan ik mijn illegale hackerspraktijken niet
+              meer uitvoeren.
+            </p>
+          </section>
+        </section>
+        <section  class="comment-section-input">
+          <input type="text" class="comment-name-input" placeholder="Naam" />
+          <textarea class="comment-text-input" placeholder="Commentaar"></textarea>
+          <button onclick="voegCommentToe(1)">Verstuur</button>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <table class="bronnen-lijst">
+
+        <caption>Bronnen Gebruikt voor deze website</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Bron Naam</th>
+            <th scope="col">Bron Link</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Fireship</th>
+            <td><a href="https://fireship.io/lessons/css-responsive-icon-navbar/">Klik hier</a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">RTL Nieuws</th>
+            <td><a href="https://www.rtlnieuws.nl/tech/artikel/5281892/vpn-dienst-cybercrime-europol">Klik hier</a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">NU.nl</th>
+            <td><a href="https://www.nu.nl/tech/6182477/hoger-onderwijs-blijft-gebruikmaken-van-antispieksoftware.html">Klik hier</a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">Tweakers</th>
+            <td><a href="https://tweakers.net/nieuws/192968/tobii-onderhandelt-met-sony-over-levering-oogtracking-voor-psvr2.html">Klik Hier</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </footer>
+  </body>
+  </html>

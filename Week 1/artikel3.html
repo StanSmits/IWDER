@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <title>IWDER Project | Opdracht 1</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="favicon" content="favicon.ico" />
+  <meta name="author" content="Stan Smits" />
+  <meta name="keywords" content="IWDER, Stan Smits, ICT, Project, Opdracht, 1" />
+  <meta name="description" content="Opdracht 1 voor het vak IWDER, gemaakt door Stan Smits." />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Style imports -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Script imports -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/92a3ae643a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="navbar-item">
+        <a href="index.html" class="navbar-link">
+          <i class="fas fa-home"></i>
+          <span class="link-text">Home</span>
+        </a>
+      </li>
+
+      <li class="navbar-item">
+        <a href="./index.html" class="navbar-link">
+          <i class="fas fa-dice-one"></i>
+          <span class="link-text">Eerste artikel</span>
+        </a>
+      </li>
+
+      <li class="navbar-item">
+        <a href="./artikel2.html" class="navbar-link">
+          <i class="fas fa-dice-two"></i>
+          <span class="link-text">Tweede artikel</span>
+        </a>
+      </li>
+
+      <li class="navbar-item">
+        <a href="./artikel3.html" class="navbar-link">
+          <i class="fas fa-dice-three"></i>
+          <span class="link-text">Derde artikel</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <article id="artikel3">
+      <h1>
+        Tobii onderhandelt met Sony over levering oogtracking voor PSVR2
+      </h1>
+      <figure>
+        <img src="assets/img/sony.jpg" alt="sony image" />
+        <figcaption>&copy; Tweakers</figcaption>
+      </figure>
+
+      <section>
+        <h2>
+          Tobii is in onderhandeling met Sony over het integreren van
+          oogtracking technologie in de aankomende PlayStation VR2-headset. De
+          ontwikkelaar van de trackingtechnologie kan nog geen uitspraken doen
+          over de financiële kant van de potentiële deal.
+        </h2>
+      </section>
+
+      <section>
+        <p>
+          Tobii maakt in de aankondiging duidelijk dat het techbedrijf nog in
+          onderhandeling is met Sony en noemt daarbij specifiek de
+          oogtrackingtechnologie voor de PlayStation VR2. Sony liet bij de
+          aankondiging van de PlayStation VR2 al weten dat de vr-headset
+          oogtracking zou krijgen, maar gaf nog geen details over de
+          onderliggende software vrij. Wel is al bekend dat de oogtracking
+          gebruikt wordt om een game te besturen en om foveated rendering toe
+          te passen. Bij deze techniek rendert een game de periferie van de
+          gebruiker met een lagere kwaliteit om de werkdruk op een systeem te
+          verminderen.
+        </p>
+        <p>
+          Het van oorsprong Zweedse bedrijf Tobii is een opzichzelfstaande
+          leverancier van eigen oogtrackingtechnologieën. Het bedrijf
+          ontwikkelde uiteenlopende toepassingen van oogtracking voor onder
+          meer de gezondheidszorg, auto-industrie en gaming. Zo ging Tobii al
+          een samenwerkingen aan met Qualcomm voor het leveren van
+          oogtrackingsoftware en bracht hij een eigen Eye Tracker uit.
+        </p>
+      </section>
+      <a href="https://tweakers.net/nieuws/192968/tobii-onderhandelt-met-sony-over-levering-oogtracking-voor-psvr2.html"
+        target="_blank">Link naar originele artikel
+        <p class="link-showcase">(tweakers.net)</p>
+      </a>
+
+      <section class="commentSection">
+        <section class="comments">
+          <img class="comment-avatar" src="assets/img/profile_picture.jpeg" alt="Avatar" />
+          <h5 class="comment-name">Stan Smits</h5>
+          <p class="comment-text">
+            Super tof! nu kan ik eindelijk weer anime kijken maar deze keer in 8k!!!!
+          </p>
+        </section>
+      </section>
+      <section  class="comment-section-input">
+        <input type="text" class="comment-name-input" placeholder="Naam" />
+        <textarea class="comment-text-input" placeholder="Commentaar"></textarea>
+        <button onclick="voegCommentToe(1)">Verstuur</button>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <table class="bronnen-lijst">
+
+      <caption>Bronnen Gebruikt voor deze website</caption>
+
+      <thead>
+        <tr>
+          <th scope="col">Bron Naam</th>
+          <th scope="col">Bron Link</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Fireship</th>
+          <td><a href="https://fireship.io/lessons/css-responsive-icon-navbar/">Klik hier</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row">RTL Nieuws</th>
+          <td><a href="https://www.rtlnieuws.nl/tech/artikel/5281892/vpn-dienst-cybercrime-europol">Klik hier</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row">NU.nl</th>
+          <td><a href="https://www.nu.nl/tech/6182477/hoger-onderwijs-blijft-gebruikmaken-van-antispieksoftware.html">Klik hier</a></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Tweakers</th>
+          <td><a href="https://tweakers.net/nieuws/192968/tobii-onderhandelt-met-sony-over-levering-oogtracking-voor-psvr2.html">Klik Hier</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </footer>
+</body>
+</html>
+
+
+<div class="artikel">
+  <div class="inner-artikel">
+    <div class="figure">
+      <img src="assets/img/sony.jpg" alt="sony image" />
+      <p>Leuke afbeelding</p>
+    </div>
+  </div>
+</div>
+
+<article>
+  <section>
+    <figure>
+      <img src="assets/img/sony.jpg" alt="sony image" />
+      <figcaption>&copy; Tweakers</figcaption>
+    </figure>
+  </section>
+</article>

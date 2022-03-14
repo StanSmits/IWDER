@@ -1,0 +1,67 @@
+:root {
+    --bg-primary: #2f2f2f;
+    --bg-secondary: #fff;
+    --text-light: #fff;
+    --text-dark: #2f2f2f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
+    font-family: inherit;
+}
+
+.menu-kaart {
+    margin: 1rem 0 .5rem 2rem;
+}
+
+.menu-kaart-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-kaart-item {
+    margin: 1rem;
+    padding: .5rem;
+    border: #2f2f2f solid 1px;
+    border-radius: .5rem;
+}
+
+.menu-kaart-image {
+    max-width: 5rem;
+    aspect-ratio: 1;
+}
+
+.menu-kaart-item {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "menu-kaart-header menu-kaart-header menu-kaart-image"
+      "menu-kaart-text menu-kaart-text menu-kaart-text"
+      "menu-kaart-text menu-kaart-text menu-kaart-text"; 
+}
+
+.menu-kaart-header {
+    grid-area: menu-kaart-header;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+.menu-kaart-image {
+    grid-area: menu-kaart-image;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.menu-kaart-text {
+    grid-area: menu-kaart-text;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+}
