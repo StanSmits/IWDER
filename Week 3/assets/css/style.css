@@ -87,6 +87,20 @@ body {
     transform: scale(1.2);
 }
 
-.hidden {
-    display: none;
+.button:active {
+    transform: scale(1.01);
+}
+
+.input {
+    /* Make CSS Theming for a checkbox input */
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    border: var(--col-primary) solid 1px;
+    border-radius: .5rem;
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }

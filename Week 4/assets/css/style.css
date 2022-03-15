@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Gibson;
+    src: url(../fonts/Gibson-Regular.woff2) format('woff2');
+}
+
+
+* {
+    --bg-primary: #2f2f2f;
+    --bg-primary-darker: #222222;
+    --text-primary: #f2f2f2;
+    --color-primary: #bc7afe;
+    --color-secondary: #9822ff;
+    font-size: 16px;
+}
+
+body {
+    background: var(--bg-primary-darker);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 0;
+    font-family: 'Gibson', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+
+.bold {
+    font-family: 'Gibson', sans-serif;
+    font-weight: 700;
+}
+
+.header {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Gibson', sans-serif;
+}
+
+.header-image {
+    position: absolute;
+    background-image: url("../img/header-image.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+.header-container-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-container-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-header {
+    padding: 0 .5rem;
+}
+
+.purchase-button {
+    background: var(--color-secondary);
+    color: var(--text-primary);
+    font-family: 'Gibson', sans-serif;
+    border: none;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.purchase-button:hover {
+    scale: 1.1;
+    transition: scale .2s ease-in-out;
+}
+
+.nav-link {
+    margin: 0 .5rem;
+}
+
+.nav-link:hover {
+    color: var(--color-secondary);
+    transition: color .3s ease-in-out;
+}

@@ -7,6 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-confetti"></script>
+    <script>
+        // Loop through all the menu items
+        for (let i = 0; i < menuItems.length; i++) {
+            // Hide all the menu items
+            menuItems[i].style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -16,96 +26,94 @@
         </section>
 
         <section class="menu-sorteerder">
-            <input type="checkbox" class="vega button" type="button" name="button-vega" onclick="navigationButtons('vega')">Vega</input>
-            <input type="checkbox" class="vlees button" type="button" name="button-vlees" onclick="navigationButtons('vlees')">Vlees</input>
-            <input type="checkbox" class="heet button" type="button" name="button-heet" onclick="navigationButtons('heet')">Heet</input>   
-            <input type="checkbox" class="favorieten button" type="button" name="button-heet" onclick="navigationButtons('favorieten')">Favorieten</input>            
-         
+            <input type="checkbox" class="vega input" name="button-vega" onclick="navigationButtons('vega')">Vega/>
+            <input type="checkbox" class="vlees input" name="button-vlees" onclick="navigationButtons('vlees')">Vlees/>
+            <input type="checkbox" class="heet input" name="button-heet" onclick="navigationButtons('heet')">Heet/>   
+            <input type="checkbox" class="favorieten input" name="button-favoriet" onclick="navigationButtons('favorieten')">Favorieten/>            
         </section>
 
         <section class="menu-kaart-items">
             <article class="menu-kaart-item" data-pizza-type="vega" data-pizza-name="deluxe">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza-deluxe.webp" alt="Pizza Deluxe">
+                    <img class="menu-kaart-image" src="./assets/img/pizza-deluxe.webp" alt="Pizza Deluxe">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza deluxe</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza deluxe</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="vega" data-pizza-name="margaritha">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza-margaritha.webp" alt="Pizza Margaritha">
+                    <img class="menu-kaart-image" src="./assets/img/pizza-margaritha.webp" alt="Pizza Margaritha">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza Margaritha</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza Margaritha</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="vlees" data-pizza-name="perfect pepperoni">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza-perfectpepperoni.jpeg" alt="Pizza perfect pepperoni">
+                    <img class="menu-kaart-image" src="./assets/img/pizza-perfectpepperoni.jpeg" alt="Pizza perfect pepperoni">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza perfect pepperoni</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza perfect pepperoni</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="vlees"  data-pizza-name="american supreme meat lover">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza_americansuprememeatlover.webp" alt="Pizza american supreme meat lover">
+                    <img class="menu-kaart-image" src="./assets/img/pizza_americansuprememeatlover.webp" alt="Pizza american supreme meat lover">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza american supreme meat lover</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza american supreme meat lover</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="vlees"  data-pizza-name="forestiere">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza_forestiere.webp" alt="Pizza forestiere">
+                    <img class="menu-kaart-image" src="./assets/img/pizza_forestiere.webp" alt="Pizza forestiere">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza forestiere</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza forestiere</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="vlees"  data-pizza-name="hawaii">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza_hawaii.webp" alt="Pizza Hawaii">
+                    <img class="menu-kaart-image" src="./assets/img/pizza_hawaii.webp" alt="Pizza Hawaii">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza Hawaii</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza Hawaii</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="heet" data-pizza-name="hot & spicy">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza_hotspicy.webp" alt="Pizza Hot & Spicy">
+                    <img class="menu-kaart-image" src="./assets/img/pizza_hotspicy.webp" alt="Pizza Hot & Spicy">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza Hot & Spicy</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza Hot & Spicy</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="heet" data-pizza-name="spicy chicken">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza_spicychickenmeatlover.webp" alt="Pizza Spicy chicken meat lover">
+                    <img class="menu-kaart-image" src="./assets/img/pizza_spicychickenmeatlover.webp" alt="Pizza Spicy chicken meat lover">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza Spicy chicken meat lover</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza Spicy chicken meat lover</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
 
             <article class="menu-kaart-item" data-pizza-type="vega" data-pizza-name="veggi">
                 <figure>
-                    <img class="menu-kaart-image" src="/Week 2/CSS-Grid/assets/img/pizza_veggi.webp" alt="Pizza Veggi">
+                    <img class="menu-kaart-image" src="./assets/img/pizza_veggi.webp" alt="Pizza Veggi">
                 </figure>
-                <h2 class="menu-kaart-header">Pizza Veggi</h2 class="menu-kaart-header">
+                <h2 class="menu-kaart-header">Pizza Veggi</h2>
                 <p class="menu-kaart-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia.</p>
                 <button class="favorieten button" type="button" name="button-favorieten" onclick="favorietButton(this)">❤️</button>
             </article>
         </section>
     </article>
 </body>
-    <script src="assets/js/main.js"></script>
 </html>
