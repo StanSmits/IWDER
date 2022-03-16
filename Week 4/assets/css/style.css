@@ -3,14 +3,14 @@
     src: url(../fonts/Gibson-Regular.woff2) format('woff2');
 }
 
-
 * {
     --bg-primary: #2f2f2f;
     --bg-primary-darker: #222222;
     --bg-primary-darkest: #1a1a1a;
     --text-primary: #f2f2f2;
     --color-primary: #bc7afe;
-    --color-secondary: #9822ff;
+    --color-secondary: #ff0209;
+    ;
     font-size: 16px;
 }
 
@@ -100,20 +100,20 @@ a {
     border: none;
     border-radius: .5rem;
     padding: .5rem;
+    transition: scale .2s ease-in-out;
 }
 
 .purchase-button:hover {
     scale: 1.1;
-    transition: scale .2s ease-in-out;
 }
 
 .nav-link {
     margin: 0 .5rem;
+    transition: color .3s ease-in-out;
 }
 
 .nav-link:hover {
     color: var(--color-secondary);
-    transition: color .3s ease-in-out;
 }
 
 .header-logo-text {
@@ -138,7 +138,6 @@ a {
     margin-top: 5rem;
     font-size: xx-large;
     font-family: 'Gibson', sans-serif;
-    color: var(--color-secondary);
 }
 
 .cards {
@@ -150,6 +149,10 @@ a {
 
 @media screen and (max-width: 768px) {
     .cards {
+        flex-direction: column;
+    }
+
+    .characters-container {
         flex-direction: column;
     }
 }
@@ -164,13 +167,13 @@ a {
     align-items: center;
     margin: .5rem;
     padding: 1rem;
+    transition: all .2s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.01);
-    -webkit-box-shadow: 0px 0px 30px 7px rgba(255, 255, 255, 0.7); 
+    -webkit-box-shadow: 0px 0px 30px 7px rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 30px 7px rgba(255, 255, 255, 0.7);
-    transition: all .2s ease-in-out;
 }
 
 
@@ -182,6 +185,11 @@ a {
     background-repeat: no-repeat;
 }
 
+
+.card:last-child img {
+    width: 10%;
+}
+
 .characters-container-header {
     display: flex;
     align-items: center;
@@ -189,12 +197,10 @@ a {
     margin-top: 5rem;
     font-size: xx-large;
     font-family: 'Gibson', sans-serif;
-    color: var(--color-secondary);
 }
 
 .characters-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1rem;
@@ -211,13 +217,13 @@ a {
     align-items: center;
     padding: 1rem;
     margin: 1.5rem;
+    transition: all .2s ease-in-out;
 }
 
 .character:hover {
     transform: scale(1.01);
-    -webkit-box-shadow: 0px 0px 30px 7px rgba(255, 255, 255, 0.7); 
+    -webkit-box-shadow: 0px 0px 30px 7px rgba(255, 255, 255, 0.7);
     box-shadow: 0px 0px 30px 7px rgba(255, 255, 255, 0.7);
-    transition: all .2s ease-in-out;
 }
 
 .character-image {
@@ -226,4 +232,127 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.character-header {
+    font-size: 1.25rem;
+}
+
+.footer {
+    background: var(--bg-primary-darkest);
+    color: var(--text-primary);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Gibson', sans-serif;
+    background-color: var(--bg-primary-darkest);
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.footer-image {
+    width: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-link {
+    margin: 0 .5rem;
+    transition: color .3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: var(--color-secondary);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--bg-primary-darker);
+    border-radius: 5px;
+    width: 70%;
+    height: auto;
+    position: relative;
+    transition: all 3s ease-in-out;
+    text-align: center;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: var(--text-primary);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: color .2s ease-in-out;
+    transition: rotate .5s ease-in-out;
+}
+
+.popup .close:hover {
+    color: var(--color-secondary);
+    rotate: 90deg;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+.popup-link {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-content {
+    color: var(--text-primary);
+    font-size: .75rem;
 }
