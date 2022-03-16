@@ -10,13 +10,6 @@
     <script src="./assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-confetti"></script>
-    <script>
-        // Loop through all the menu items
-        for (let i = 0; i < menuItems.length; i++) {
-            // Hide all the menu items
-            menuItems[i].style.display = "none";
-        }
-    </script>
 </head>
 
 <body>
@@ -26,10 +19,10 @@
         </section>
 
         <section class="menu-sorteerder">
-            <input type="checkbox" class="vega input" name="button-vega" onclick="navigationButtons('vega')">Vega/>
-            <input type="checkbox" class="vlees input" name="button-vlees" onclick="navigationButtons('vlees')">Vlees/>
-            <input type="checkbox" class="heet input" name="button-heet" onclick="navigationButtons('heet')">Heet/>   
-            <input type="checkbox" class="favorieten input" name="button-favoriet" onclick="navigationButtons('favorieten')">Favorieten/>            
+            <input type="checkbox" class="vega input" name="button-vega" onclick="navigationButtons('vega')">Vega
+            <input type="checkbox" class="vlees input" name="button-vlees" onclick="navigationButtons('vlees')">Vlees
+            <input type="checkbox" class="heet input" name="button-heet" onclick="navigationButtons('heet')">Heet
+            <input type="checkbox" class="favorieten input" name="button-favoriet" onclick="navigationButtons('favorieten')">Favorieten           
         </section>
 
         <section class="menu-kaart-items">
@@ -116,4 +109,12 @@
         </section>
     </article>
 </body>
+<script defer>
+    let menuItems = document.getElementsByClassName("menu-kaart-item");
+    // Loop through all the menu items
+    for (let i = 0; i < menuItems.length; i++) {
+        // Hide all the menu items
+        menuItems[i].style.display = "none";
+    }
+</script>
 </html>

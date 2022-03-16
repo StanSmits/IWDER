@@ -8,8 +8,6 @@ function navigationButtons(type) {
 
 
     disableOtherButtons(type);
-
-
     if (type == "favorieten") {
         // Loop through all the buttons
         for (let i = 0; i < button.length; i++) {
