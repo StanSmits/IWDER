@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eindopdracht IWDER</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script src="./assets/js/main.js" type="text/javascript"></script>
+    <script src="./assets/js/main.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/92a3ae643a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,8 +19,8 @@
             </section>
 
             <section class="header-container-right">
-                <button class="purchase-button"><a href="./merch/index.html" class="nav-header">Purchase the
-                        game</a></button>
+                <button class="purchase-button nav-header" onClick="window.location.href='./merch/index.html'">Purchase the game</button>
+
             </section>
         </section>
     </header>
@@ -29,35 +30,33 @@
             <img src="./assets/svg/logo-big.svg" class="header-image" alt="logo" class="header-logo">
         </section>
 
-        <section class="container">
-            <h2 class="card-header">Supported on the following platforms</h2>
+        <section class="bouncing arrow">
+            <a class="fa-solid fa-angles-down bouncing-arrow"></a>
+        </section>
+
+        <section class="container" id="supported-platforms">
+            <h2 class="card-header" >Supported on the following platforms</h2>
             <section class="cards">
                 <section class="card">
                     <img src="./assets/svg/ps5.svg" alt="Playstation 5 image" class="card-image">
                     <h2 class="card-header">
                         Playstation 5
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente incidunt
-                        doloremque quae iusto nobis, placeat minus maiores dolor dolorem, natus neque sit, quaerat
-                        provident numquam! Temporibus vel sed aliquid vitae!</p>
+                    <p class="card-text">Got your hands on sony's newest masterpiece? WOW! Lucky you, go ahead and spend another 60 bucks on our game (its very good I swear) We have cool functions such as - it actually works (unlike cyberpoop)</p>
                 </section>
                 <section class="card">
                     <img src="./assets/svg/xbox.svg" alt="Xbox Logo" class="card-image">
                     <h2 class="card-header">
                         Xbox Series X & S
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ipsum ratione
-                        corporis. Deserunt, est corporis vitae minus nostrum praesentium perspiciatis. Error, nam!
-                        Commodi modi sed voluptatum, aspernatur incidunt tempora labore!</p>
+                    <p class="card-text">Okay Okay, we get it. You dont have any friends, we have a solution for you! Our game can be played solo. And best thing yet... (for us) we will scrape the last bits of cash from your bank account</p>
                 </section>
                 <section class="card">
                     <img src="./assets/svg/pc.svg" alt="PC Logo" class="card-image">
                     <h2 class="card-header">
                         PC
                     </h2>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione id aspernatur
-                        eligendi ad quos voluptatem libero fugiat aliquid voluptates quia aut omnis, quod labore beatae
-                        incidunt magnam quis odio voluptatibus?</p>
+                    <p class="card-text">Alright, your discord kitten hasn't replied to you for the past 5 minutes, but you used to play League of Legends so you can't touch grass or go outside. Why not try to touch our virtual grass?</p>
                 </section>
             </section>
         </section>
@@ -68,12 +67,16 @@
             <section class="characters-container" id="characters-container">
                 <!-- When I press the section a pop up should appear with more information -->
                 <section class="character" id="aiden">
-                    <a href="#aiden-popup" type="button" class="popup-link">
+                    <a href="#aiden-popup" type="button" class="popup-link" data-scroll-ignore>
                         <img src="./assets/img/character-1.png" alt="Image of a character of the game"
                             class="character-image">
                         <h2 class="character-header">Aiden</h2>
                         <p class="character-description">Aiden is a member of an outcast group known as the Pilgrims.
                             They constantly wander the world and are compared...
+                        </p>
+
+                        <p class="character-description">
+                            Click for more information
                         </p>
                     </a>
                 </section>
@@ -81,7 +84,7 @@
                 <section id="aiden-popup" class="overlay">
                     <article class="popup">
                         <h2>Aiden</h2>
-                        <a class="close" href="#aiden">&times;</a>
+                        <a class="close" href="#aiden" data-scroll-ignore>&times;</a>
                         <article class="popup-content">
                             <p>
                                 It is unknown when and where exactly Aiden was born but it can be theorized that he was
@@ -108,12 +111,15 @@
 
 
                 <section class="character" id="frank">
-                    <a href="#frank-popup" type="button" class="popup-link">
+                    <a href="#frank-popup" type="button" class="popup-link" data-scroll-ignore>
                         <img src="./assets/img/character-2.png" alt="Image of a character of the game"
                             class="character-image">
                         <h2 class="character-header">Frank</h2>
                         <p class="character-description">The post-apocalyptic world is full of death and suffering, but
                             even here you will find people who want to build instead of destroy...
+                        </p>
+                        <p class="character-description">
+                            Click for more information
                         </p>
                     </a>
                 </section>
@@ -121,7 +127,7 @@
                 <section id="frank-popup" class="overlay">
                     <article class="popup">
                         <h2>Frank</h2>
-                        <a class="close" href="#frank">&times;</a>
+                        <a class="close" href="#frank" data-scroll-ignore>&times;</a>
                         <article class="popup-content">
                             <p>
                                 The post-apocalyptic world is full of death and suffering, but even here you will find
@@ -138,19 +144,23 @@
 
 
                 <section class="character" id="hakon">
-                    <a href="#hakon-popup" type="button" class="popup-link">
+                    <a href="#hakon-popup" type="button" class="popup-link" data-scroll-ignore>
                         <img src="./assets/img/character-3.png" alt="Image of a character of the game"
                             class="character-image">
                         <h2 class="character-header">Hakon</h2>
                         <p class="character-description">Hakon is a member of the Nightrunners, a faction that used to
-                            help people even in the dangers of the night but eventually disappeared...</p>
+                            help people even in the dangers of the night but eventually disappeared...
+                        </p>
+                        <p class="character-description">
+                            Click for more information
+                        </p>
                     </a>
                 </section>
 
                 <section id="hakon-popup" class="overlay">
                     <article class="popup">
                         <h2>Hakon</h2>
-                        <a class="close" href="#hakon">&times;</a>
+                        <a class="close" href="#hakon" data-scroll-ignore>&times;</a>
                         <article class="popup-content">
                             <p></p>
                             Hakon is a member of the Nightrunners, a faction that used to help people even in the
@@ -187,7 +197,7 @@
 
 
                 <section class="character" id="lawan">
-                    <a href="#lawan-popup" type="button" class="popup-link">
+                    <a href="#lawan-popup" type="button" class="popup-link" data-scroll-ignore data-scroll-ignore>
                         <img src="./assets/img/character-4.png" alt="Image of a character of the game"
                             class="character-image">
                         <h2 class="character-header">Lawan</h2>
@@ -195,13 +205,16 @@
                             She is an ally of Aiden Caldwell but will stop at nothing to mark the names off her hit
                             list...
                         </p>
+                        <p class="character-description">
+                            Click for more information
+                        </p>
                     </a>
                 </section>
 
                 <section id="lawan-popup" class="overlay">
                     <article class="popup">
-                        <h2>Frank</h2>
-                        <a class="close" href="#lawan">&times;</a>
+                        <h2>Lawan</h2>
+                        <a class="close" href="#lawan" data-scroll-ignore>&times;</a>
                         <article class="popup-content">
                             <p>
                                 Lawan is major character in the City on a quest for revenge. She is an ally of Aiden
@@ -236,21 +249,17 @@
                 <img src="./assets/svg/logo-big.svg" alt="Game Logo" class="footer-image"><a href="#"></a></img>
             </section>
             <section class="footer-right">
-                <a href="#" class="footer-link">
-                    <p class="footer-text">001</p>
+                <a href="https://dl2.dyinglightgame.com" class="footer-link">
+                    <p class="footer-text">Official game site</p>
                 </a>
-                <a href="#" class="footer-link">
-                    <p class="footer-text">002</p>
+                <a href="https://techlandgg.com" class="footer-link">
+                    <p class="footer-text">Official creator site</p>
                 </a>
-                <a href="#" class="footer-link">
-                    <p class="footer-text">003</p>
-                </a>
-                <a href="#" class="footer-link">
-                    <p class="footer-text">004</p>
+                <a href="./merch/index.html" class="footer-link">
+                    <p class="footer-text">Unofficial merch store</p>
                 </a>
             </section>
         </section>
     </footer>
 </body>
-
 </html>

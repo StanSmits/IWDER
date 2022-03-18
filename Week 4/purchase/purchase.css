@@ -1,0 +1,40 @@
+.order-content {
+    padding: 8px;
+  }
+  
+  .order-content > * {
+    margin: auto;
+    max-width: 560px;
+  }
+  
+  .order-content form {
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 16px;
+    margin-top: 16px;
+  }
+  
+  .order-content label {
+    margin-bottom: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    line-height: 32px;
+  }
+  
+  .order-content input, .order-content select {
+    height: 32px;
+    line-height: 28px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    min-width: 200px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+  
+  .order-content input[type="submit"] {
+    background-color: var(--color-secondary);
+    text-transform: uppercase;
+  }
